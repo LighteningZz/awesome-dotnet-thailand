@@ -27,6 +27,12 @@ and some specific libraries for business in Thailand.
 
 ### Testing Framework/Automated Testing
 - xUnit
+- [NUnit](https://github.com/nunit/nunit)
+
+### Mocking Libraries
+- [FakeItEasy](https://github.com/FakeItEasy/FakeItEasy)
+- [NSubstitute](https://github.com/nsubstitute/NSubstitute)
+- [Moq](https://github.com/moq/moq)
 
 ### Authentication + Autorization
 - ASP.net Identity + Role, 
