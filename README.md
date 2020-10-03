@@ -1,4 +1,5 @@
-# Awesome .NET Thailand 
+# Awesome .NET Thailand
+## [https://github.com/dotnetthailand/awesome-dotnet-thailand](https://github.com/dotnetthailand/awesome-dotnet-thailand)
 List of suggested awesome .NET communities/libraries/articles/tools/technique/resources 
 
 Inspired by [Awesome .NET](https://github.com/quozd/awesome-dotnet)
