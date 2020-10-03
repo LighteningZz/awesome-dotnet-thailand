@@ -5,11 +5,48 @@ Inspired by [Awesome .NET](https://github.com/quozd/awesome-dotnet)
 with more details/feedback from people in communites who use them 
 and some specific libraries for business in Thailand.  
 
-[[_TOC_]]
-___
+## Table of Contents
+- [Entry Points](#entry-points)
+  * [Entry Points](#entry-points-1)
+  * [API Gateway](#api-gateway)
+  * [DNS, CDN, SSL FREE!!](#dns--cdn--ssl-free--)
+- [Application Hosting](#application-hosting)
+  * [Non-containerized](#non-containerized)
+  * [Containerized](#containerized)
+    + [Image Registry](#image-registry)
+- [Application Implementation](#application-implementation)
+  * [Local Dev Environment - Windows 10](#local-dev-environment---windows-10)
+  * [Project Structure](#project-structure)
+  * [Coding Pratices](#coding-pratices)
+  * [Object to Object Mapping](#object-to-object-mapping)
+  * [Authentication + Autorization](#authentication---autorization)
+  * [Caching](#caching)
+  * [Report](#report)
+  * [Task Scheduler cron](#task-scheduler-cron)
+  * [WebSocket](#websocket)
+  * [Messaging](#messaging)
+  * [Web API Document](#web-api-document)
+  * [Environment Configuration](#environment-configuration)
+- [Data](#data)
+  * [Database](#database)
+  * [Storage](#storage)
+  * [Data Security](#data-security)
+- [Testing](#testing)
+  * [Unit testing](#unit-testing)
+  * [E2E testing](#e2e-testing)
+- [High Availability](#high-availability)
+- [Logging and Monitoring](#logging-and-monitoring)
+- [DevOps](#devops)
+  * [Cloud Resource Management](#cloud-resource-management)
+  * [CI/CD](#ci-cd)
+- [Others](#others)
+  * [Business Intelligence](#business-intelligence)
+  * [Email Server](#email-server)
+  * [Notification Server](#notification-server)
+  * [Document, Excel](#document--excel)
 
 ## Entry Points
-As load balacer or reverse proxy for applications.
+### Entry Points
 - Azure Frontdoor:  Load Balancer, SSL Termination, WAF, failover
 - Azure Application Gateway:  Load Balancer, SSL Termination, WAF, failover
 - Nginx: Reverse proxy, SSL Termination,  Load Balancer
