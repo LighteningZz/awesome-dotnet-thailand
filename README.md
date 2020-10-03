@@ -7,36 +7,36 @@ with more details/feedback from people in communites who use them
 and some specific libraries for business in Thailand.  
 
 ## Table of Contents
-- [Entry Points](#entry-points)
-  * [Entry Points](#entry-points-1)
-  * [API Gateway](#api-gateway)
-  * [DNS, CDN, SSL FREE!!](#dns--cdn--ssl-free--)
-- [Application Hosting](#application-hosting)
-  * [Non-containerized](#non-containerized)
-  * [Containerized](#containerized)
-    + [Image Registry](#image-registry)
 - [Application Implementation](#application-implementation)
   * [Local Dev Environment - Windows 10](#local-dev-environment---windows-10)
   * [Project Structure](#project-structure)
   * [Coding Pratices](#coding-pratices)
-  * [Object to Object Mapping](#object-to-object-mapping)
   * [Authentication + Autorization](#authentication---autorization)
+  * [Object to Object Mapping](#object-to-object-mapping)  
   * [Caching](#caching)
   * [Report](#report)
   * [Task Scheduler cron](#task-scheduler-cron)
   * [WebSocket](#websocket)
   * [Messaging](#messaging)
+  * [Logging and Monitoring](#logging-and-monitoring)
   * [Web API Document](#web-api-document)
   * [Environment Configuration](#environment-configuration)
+- [Testing](#testing)
+  * [Unit testing](#unit-testing)
+  * [E2E testing](#e2e-testing)
 - [Data](#data)
   * [Database](#database)
   * [Storage](#storage)
   * [Data Security](#data-security)
-- [Testing](#testing)
-  * [Unit testing](#unit-testing)
-  * [E2E testing](#e2e-testing)
+- [Application Hosting](#application-hosting)
+  * [Non-containerized](#non-containerized)
+  * [Containerized](#containerized)
+    + [Image Registry](#image-registry)
+- [Internet Facing](#internet-facing)
+  * [Entry Points](#entry-points)
+  * [API Gateway](#api-gateway)
+  * [DNS, CDN, SSL FREE!!](#dns--cdn--ssl-free--)
 - [High Availability](#high-availability)
-- [Logging and Monitoring](#logging-and-monitoring)
 - [DevOps](#devops)
   * [Cloud Resource Management](#cloud-resource-management)
   * [CI/CD](#ci-cd)
@@ -46,29 +46,6 @@ and some specific libraries for business in Thailand.
   * [Notification Server](#notification-server)
   * [Document, Excel](#document--excel)
 
-## Entry Points
-### Entry Points
-- Azure Frontdoor:  Load Balancer, SSL Termination, WAF, failover
-- Azure Application Gateway:  Load Balancer, SSL Termination, WAF, failover
-- Nginx: Reverse proxy, SSL Termination,  Load Balancer
-### API Gateway
-- Kong
-- Azure API Management
-### DNS, CDN, SSL FREE!!
-- Cloudflare
-- Azure CDN
-___
-
-## Application Hosting
-### Non-containerized
-- Azure App Service (Linux, Window)
-### Containerized
-- Azure App Service for container
-- Azure Container Instance (ACI) (Serverless)
-- Azure Kubernetes Service (AKS)
-#### Image Registry
-- Docker Hub
-- Azure Container Registry
 ___
 
 ## Application Implementation
@@ -86,15 +63,15 @@ ___
 - Code smell detection & Refactoring
 	- SonarLint
 	- SonarQube
-### Object to Object Mapping
-- AutoMapper
-- Mapster
 ### Authentication + Autorization
 - ASP.net Identity + Role, 
 - Claims
 - Policies
 - JWT
 - Identity Server 4: OAuth2 + OpenID
+### Object to Object Mapping
+- AutoMapper
+- Mapster
 ### Caching
 - In-memory Cache
 - IDistributedCache with SQL Server
@@ -111,12 +88,25 @@ ___
 ### Messaging
 - RabbitMQ
 - Azure Service Bus
+### Logging and Monitoring
+- Serilog 
+- Azure Application Insight
+- AspNetCore.Diagnostics.HealthChecks
 ### Web API Document
 - ReDoc
 - Swashbuckle (Swagger)
 ### Environment Configuration
 - Option Pattern
 - Azure App Configuration
+___
+
+## Testing
+### Unit testing
+- xUnit
+- [NUnit](https://github.com/nunit/nunit)
+- Moq
+### E2E testing
+- Cypress
 ___
 
 ## Data
@@ -134,25 +124,35 @@ ___
 - Storage encryption
 ___
 
-## Testing
-### Unit testing
-- xUnit
-- [NUnit](https://github.com/nunit/nunit)
-- Moq
-### E2E testing
-- Cypress
+## Application Hosting
+### Non-containerized
+- Azure App Service (Linux, Window)
+### Containerized
+- Azure App Service for container
+- Azure Container Instance (ACI) (Serverless)
+- Azure Kubernetes Service (AKS)
+#### Image Registry
+- Docker Hub
+- Azure Container Registry
+___
+
+## Internet Facing
+### Entry Points
+- Azure Frontdoor:  Load Balancer, SSL Termination, WAF, failover
+- Azure Application Gateway:  Load Balancer, SSL Termination, WAF, failover
+- Nginx: Reverse proxy, SSL Termination,  Load Balancer
+### API Gateway
+- Kong
+- Azure API Management
+### DNS, CDN, SSL FREE!!
+- Cloudflare
+- Azure CDN
 ___
 
 ## High Availability
 - Azure Recovery Services vaults
 - Azure availability zone
 - Azure geo-replication
-___
-
-## Logging and Monitoring
-- Serilog 
-- Azure Application Insight
-- AspNetCore.Diagnostics.HealthChecks
 ___
 
 ## DevOps
