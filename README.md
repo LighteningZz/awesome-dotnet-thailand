@@ -58,11 +58,31 @@ ___
 - N-Tier Architecture
 - Clean Architecture
 - Dependency Injection
+
+
+### Web API Document
+- ReDoc, Swashbuckle (Swagger)
+
+### Object to Object Mapping
+- AutoMapper
+- Mapster
+
+### Testing Framework/Automated Testing
+- [xUnit](https://github.com/xunit/xunit)
+- [NUnit](https://github.com/nunit/nunit)
+
+### Mocking Libraries
+- [FakeItEasy](https://github.com/FakeItEasy/FakeItEasy)
+- [NSubstitute](https://github.com/nsubstitute/NSubstitute)
+- [Moq](https://github.com/moq/moq)
+
+=======
 ### Coding Pratices
 - SOLID Principle
 - Code smell detection & Refactoring
 	- SonarLint
 	- SonarQube
+
 ### Authentication + Autorization
 - ASP.net Identity + Role, 
 - Claims
@@ -181,3 +201,6 @@ ___
 - Open XML 
 - Close XML
 - Epplus
+
+### Backup Server
+- Azure Recovery Services vaults
