@@ -43,11 +43,13 @@ and some specific libraries for business in Thailand.
 - [DevOps](#devops)
   - [Cloud Resource Management](#cloud-resource-management)
   - [CI/CD](#ci-cd)
+  - [Backup Server](#backup-server)
 - [Others](#others)
   - [Business Intelligence](#business-intelligence)
   - [Email Server](#email-server)
   - [Notification Server](#notification-server)
-  - [Document, Excel](#document--excel)
+  - [Excel/Word](#excel-word)
+  - [PDF](#pdf)
 
 ---
 
@@ -85,8 +87,6 @@ and some specific libraries for business in Thailand.
 - [FakeItEasy](https://github.com/FakeItEasy/FakeItEasy)
 - [NSubstitute](https://github.com/nsubstitute/NSubstitute)
 - [Moq](https://github.com/moq/moq)
-
-=======
 
 ### Coding Pratices
 
@@ -253,6 +253,11 @@ A variable in a report uses Liquid template which is used in Jekyll.
 
 ---
 
+### Backup Server
+
+- Azure Recovery Services vaults
+
+---
 ## Others
 
 ### Business Intelligence
@@ -273,13 +278,18 @@ A variable in a report uses Liquid template which is used in Jekyll.
 
 - One Signal
 
-### Document, Excel
+### Excel, Word
 
 - [Open XML SDK](https://github.com/OfficeDev/Open-XML-SDK) The Open XML SDK provides tools for working with Office Word, Excel, and PowerPoint documents
 - [Close XML](https://github.com/closedxml/closedxml) .NET library for reading, manipulating and writing Excel 2007+ (.xlsx, .xlsm) files.
 - [Epplus](https://github.com/EPPlusSoftware/EPPlus) Excel spreadsheets for .NET
 - [NPOI](https://github.com/nissl-lab/npoi) .NET version of POI Java project. With NPOI, you can read/write Office 2003/2007 files very easily.
 
-### Backup Server
 
-- Azure Recovery Services vaults
+### PDF
+
+- [ITextSharp](https://github.com/itext/itextsharp) Free only for open source project
+- [WkHtmlToPdf](https://github.com/codaxy/wkhtmltopdf) C# wrapper utility around wkhtmltopdf console tool
+- [FastReport](https://github.com/FastReports/FastReport) It can also export PDF.
+
+--- 
