@@ -29,6 +29,7 @@ and some specific libraries for business in Thailand.
   - [E2E testing](#e2e-testing)
 - [Data](#data)
   - [Database](#database)
+  - [ORM](#orm)
   - [Storage](#storage)
   - [Data Security](#data-security)
 - [Application Hosting](#application-hosting)
@@ -50,6 +51,9 @@ and some specific libraries for business in Thailand.
   - [Notification Server](#notification-server)
   - [Excel/Word](#excel-word)
   - [PDF](#pdf)
+  - [HTTP Client](#http-client)
+  - [HTML Parser](#html-parser)
+  - [JSON](#json)
 
 ---
 
@@ -57,7 +61,7 @@ and some specific libraries for business in Thailand.
 
 ### Local Dev Environment - Windows 10
 
-- WSL2
+- [WSL2](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 - Docker Desktop
 - VS Code
 - Visual Studio
@@ -66,15 +70,15 @@ and some specific libraries for business in Thailand.
 
 - N-Tier Architecture
 - Clean Architecture
-- Dependency Injection
+- [Dependency Injection](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection)
 
 ### Web API Document
 
-- ReDoc, Swashbuckle (Swagger)
+- [API documentation with Swagger / OpenAPI](https://docs.microsoft.com/th-th/aspnet/core/tutorials/web-api-help-pages-using-swagger)
 
 ### Object to Object Mapping
 
-- AutoMapper
+- [AutoMapper](https://github.com/AutoMapper/AutoMapper)
 - Mapster
 
 ### Testing Framework/Automated Testing
@@ -95,7 +99,7 @@ and some specific libraries for business in Thailand.
 
 ### Authentication + Autorization
 
-- ASP.net Identity + Role,
+- ASP.net Identity + Role
 - Claims
 - Policies
 - JWT
@@ -108,7 +112,7 @@ and some specific libraries for business in Thailand.
 
 ### Caching
 
-- In-memory Cache
+- [In-memory Cache](https://docs.microsoft.com/th-th/aspnet/core/performance/caching/memory)
 - IDistributedCache with SQL Server
 - Redis (Database Caching)
 - Azure Redis
@@ -139,19 +143,15 @@ A variable in a report uses Liquid template which is used in Jekyll.
 - Azure Service Bus
 
 ### Logging and Monitoring
-
+- [Logging in .NET Core and ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/logging/?view=aspnetcore-5.0) This document link include 3rd Party logging providers. 
 - Serilog
 - Azure Application Insight
 - AspNetCore.Diagnostics.HealthChecks
 
-### Web API Document
-
-- ReDoc
-- Swashbuckle (Swagger)
 
 ### Environment Configuration
 
-- Option Pattern
+- [Option Pattern](https://docs.microsoft.com/th-th/aspnet/core/fundamentals/configuration/options) The options pattern uses classes to provide strongly typed access to groups of related settings.
 - Azure App Configuration
 
 ---
@@ -175,9 +175,15 @@ A variable in a report uses Liquid template which is used in Jekyll.
 ### Database
 
 - MSSQL
+- MySql/MariaDB
 - Postgresql
 - Azure SQL, Azure SQL Managed Instance
 - Azure Cosmos DB
+
+### ORM
+- [LINQ to DB](https://github.com/linq2db/linq2db) is the fastest LINQ database access library offering a simple, light, fast, and type-safe layer between your POCO objects and your database.
+- [Dapper](https://github.com/StackExchange/Dapper) 
+- [NHibernate](https://github.com/nhibernate/nhibernate-core) NHibernate is a mature, open source object-relational mapper for the .NET framework.
 
 ### Storage
 
@@ -218,11 +224,12 @@ A variable in a report uses Liquid template which is used in Jekyll.
 - Azure Frontdoor: Load Balancer, SSL Termination, WAF, failover
 - Azure Application Gateway: Load Balancer, SSL Termination, WAF, failover
 - Nginx: Reverse proxy, SSL Termination, Load Balancer
-
+- [Traefik](https://doc.traefik.io/traefik/)  is an open-source Edge Router that makes publishing your services
 ### API Gateway
 
 - Kong
 - Azure API Management
+- [Ocelot](https://github.com/ThreeMammals/Ocelot)😺
 
 ### DNS, CDN, SSL FREE!!
 
@@ -292,4 +299,13 @@ A variable in a report uses Liquid template which is used in Jekyll.
 - [WkHtmlToPdf](https://github.com/codaxy/wkhtmltopdf) C# wrapper utility around wkhtmltopdf console tool
 - [FastReport](https://github.com/FastReports/FastReport) It can also export PDF.
 
+### HTTP Client
+- [HttpClient](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/http-requests) Simple HTTP Client in .NET from Microsoft
+- [RestSharp](https://github.com/restsharp/RestSharp) Probably, the most popular REST API client library for .NET
+
+### HTML Parser
+- [Html Agility Pack (HAP)](https://github.com/zzzprojects/html-agility-pack) HAP is an HTML parser written in C# to read/write DOM and supports plain XPATH or XSLT.
+
+### JSON
+- [quicktype.io](https://quicktype.io/csharp/) Convert JSON into gorgeous, typesafe code in any language. 
 --- 
